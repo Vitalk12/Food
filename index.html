@@ -39,7 +39,7 @@
           </li>
         </ul>
       </nav>
-      <button class="nav-button" type="button">Order Now</button>
+      <button class="nav-button" type="button" data-modal-open >Order Now</button>
     </div>
   </header>
   <main>
@@ -142,9 +142,11 @@
       </ul>
     </section>
   </main>
-  <div class="backdrop">
-    <div class="modal">
-      <button class="close">X</button>
+  <div class="backdrop is-hidden">
+    <div class="modal" data-modal>
+      <button class="close" data-modal-close><svg class="modal-icon" width="10" height="10" > 
+        <use href="./images/icons.svg#icon-close1"></use>
+      </svg></button>
       <p class="title-modal">Order Form</p>
       <form>
 
@@ -160,20 +162,21 @@
           <label class="label" type="text" for="user-phone" >
             Phone number
           </label>
-           <input type="number" class="input-modal" name="user-phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" id="user-phone">
+           <input type="tel" class="input-modal" name="user-phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" id="user-phone">
         </div>
  
         <div class="input-iteam">
           <label class="label" type="text" for="user-email">
            Email
           </label>
-           <input type="text" class="input-modal" name="user-email" placeholder="example@gmail.com" id="user-email">  
+           <input type="email" class="input-modal" name="user-email" placeholder="example@gmail.com" id="user-email">  
 
         </div>
 <button class="send" type="submit"> Send </button>
       </form>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
