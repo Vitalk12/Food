@@ -54,7 +54,6 @@ img{
 }
 
 .nav-link {
-    
     font-weight: 700;
     color: inherit;
 }
@@ -76,13 +75,12 @@ font-weight: 500;
 margin-left: 30px;
 padding: 6px 18px;
 }
+
 /**
   |============================
-  | 
+  | Hero section
   |============================
 */
-
-
 
 .hero {
     background: #FEFEFE;
@@ -99,13 +97,19 @@ font-size: 16px;
 }
 .nav-button {
 }
+
+/**
+  |============================
+  | Offers section
+  |============================
+*/
+
 .offers {
 background: #FEFEFE;
 }
 .offers-container {
 display: flex;
 align-items: flex-end;
-
 
 }
 .offers-img {
@@ -172,4 +176,66 @@ padding: 10px 22px;
 justify-content: center;
 align-items: center;
 margin-bottom: 79px;
+}
+
+/**
+  |============================
+  | Subscribe section
+  |============================
+*/
+
+.subscribe-section {
+}
+
+.subscribe-container {
+    display: flex;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 17px;
+    padding-right: 16px;
+}
+
+.subscribe-title {
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.subscribe-uppertitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.mail-form {
+    display: flex;
+    gap: 32px;
+}
+
+.subscribe-mail-input {
+    display: inline-flex;
+    border-radius: 30px;
+    width: 395px;
+    height: 42px;
+    padding: 12px 57px 12px 12px;
+    border: 0.854px solid #FFE550;
+    background-color: #FEFEFE;
+}
+.subscribe-mail-btn {
+    display: inline-flex;
+    color: #2C2C2C;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.50;
+    padding: 11px 22px;
+    border-radius: 30px;
+    background-color: #BBF330;
+    border-style: none;
+    cursor: pointer;
+}
+.subscribe-img {
+    width: 608px;
 }
