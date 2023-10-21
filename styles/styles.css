@@ -27,7 +27,7 @@ img {
   display: block;
 }
 .container {
-  width: 1280px;
+  max-width: 1280px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -121,23 +121,29 @@ img {
   font-weight: 500;
   padding: 6px 18px;
 }
+/*
+  |============================
+  | Offers section
+  |============================
+*/
 .offers {
-  background: #fefefe;
+  background: #FFE550;
 }
 .offers-container {
   display: flex;
-  align-items: flex-end;
+ align-items: flex-end;
 }
 
 .offers-img {
   display: flex;
   flex-shrink: 0;
-  max-height: 502px;
-  margin-right: 90px;
-  border-radius: 550px;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 145px;
+width: 550px;
+max- height: 550px;
+margin-right: 90px;
+border-radius: 550px;
+ margin-bottom: 43px;
 }
+
 .offers-text {
   max-width: 573px;
 }
@@ -155,6 +161,9 @@ img {
   line-height: 1.5;
   max-width: 500px;
   margin-bottom: 48px;
+}
+.favorites-icon {
+    margin-bottom: 8px;
 }
 
 .offers-list {
@@ -191,6 +200,61 @@ img {
   align-items: center;
   margin-bottom: 79px;
 }
+
+/*
+  |============================
+  | Favorites section
+  |============================
+*/
+
+.favorites {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.favorites-container {
+   
+}
+.favorites-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.favorites-descr {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.favorites-item {
+    width: calc((100% - 64px) / 3);
+}
+.favorites-border {
+    width: 395px;
+    height: 397px;
+    border-radius: 197.5px;
+    border: 16px solid #FFE550;
+    background:#FEFEFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 41px 40px;
+}
+.favorites-img {}
 /* +++++ Comments +++++ */
 .comments {
 }
@@ -223,7 +287,7 @@ img {
   font-weight: 500;
 }
 
-/**
+/*
   |============================
   | Subscribe section
   |============================
