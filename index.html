@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <title>Document</title>
@@ -32,6 +38,106 @@
           <ul class="nav-list">
             <li class="nav-list-item active">
               <a href="" class="nav-link">Home</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ 
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+<link rel="stylesheet" href="./styles/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container cont-header">
+      <a href="./index.html"><img src="./images/logo.png" alt="images logo" class="logo" /></a>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list-item active">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-link">About</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-link">Service</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-button" type="button" data-modal-open >Order Now</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero-text">
+        With just a few clicks, you can have your favorite meals delivered
+        straight to your doorstep, no matter where you are. Order now and
+        enjoy a hassle-free and delicious meal from the comfort of your own
+        home.
+      </p>
+      <button class="nav-button" type="button">Order Now</button>
+      <img src="./images/Foto 1.png" alt="food" width="292" />
+      <div class="content">
+        <div class="slider fade">
+          <div>
+            <div class="image">
+              <img src="./images/Foto 1.png" />
+            </div>
+          </div>
+          <div>
+            <div class="image">
+              <img src="./images/salad.png" />
+            </div>
+          </div>
+          <div>
+            <div class="image">
+              <img src="./images/breakfast.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+		
+    </section>
+    <section class="offers">
+      <div class="container offers-container">
+        <img src="./images/aple.png" alt="aplle" class="offers-img" />
+        <div class="offers-text">
+          <h2 class="offers-title">What’s Special About Our Offerings</h2>
+          <p class="offers-descr">
+            With our platform, you can browse through a diverse selection of
+            cuisines and local restaurants, and choose from a variety of dishes
+            that cater to your specific taste buds.
+          </p>
+          <ul class="offers-list">
+            <li class="offers-item">
+              <img src="./images/Icon Deliv.png" alt="rocket" />
+              <h3 class="offers-item-name">Fasest Delivery</h3>
+              <p class="offers-item-descr">
+                Our advanced logistics system and dedicated delivery partners
+                ensure that your meals are delivered to you within 30-minutes.
+              </p>
+
             </li>
             <li class="nav-list-item">
               <a href="" class="nav-link">About</a>
@@ -54,7 +160,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero-text-container">
+        <div class="hero-text-container container">
           <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
           <p class="hero-text">
             With just a few clicks, you can have your favorite meals delivered
@@ -66,7 +172,26 @@
           <button class="nav-btn" type="button">Order Now</button>
         </div>
         <div class="img-food">
-          <img src="./images/Foto 1.png" alt="food" width="528" />
+        
+          <div class="content">
+            <div class="slider fade">
+              <div>
+                <div class="image">
+                  <img src="./images/Foto 1.png" alt="food" class="image-slider" width="528" />
+                </div>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="./images/breakfast.png" class="image-slider"/>
+                </div>
+              </div>
+              <div>
+                <div class="image">
+                  <img src="./images/salad.png" class="image-slider"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="offers">
@@ -238,6 +363,25 @@
         </form>
       </div>
     </div>
+
+  
     <script src="./js/modal.js"></script>
+   
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+  </div>
+  <script src="./js/modal.js"></script>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+ 
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./js/slider.js"></script>
+</body>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/slick.js"></script>
   </body>
 </html>
