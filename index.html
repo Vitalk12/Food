@@ -17,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <title>Document</title>
@@ -54,24 +61,42 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero-text-container">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-text">
-            With just a few clicks, you can have your favorite meals delivered
-            straight to your doorstep, no matter where you are. Order now and
-            enjoy a hassle-free and delicious meal from the comfort of your own
-            home.
-          </p>
-
-          <button class="nav-btn" type="button">Order Now</button>
-        </div>
-        <div class="img-food">
-          <img src="./images/Foto 1.png" alt="food" width="528" />
+        <div class="container hero-container">
+          <div class="hero-inform-cont">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="nav-btn" type="button">Order Now</button>
+          </div>
+          <div class="hero-menu-cont">
+            <button class="prev-btn menu-btn" type="button">
+              <svg class="prev-icon" width="16" height="29">
+                <use href="./images/icons.svg#prev"></use>
+              </svg>
+            </button>
+            <div class="border-cont">
+              <img
+                class="hero-menu-img"
+                src="./images/Foto 1.png"
+                alt="food"
+                width="528"
+              />
+            </div>
+            <button class="next-btn menu-btn">
+              <svg class="next-icon" width="16" height="29">
+                <use href="./images/icons.svg#next"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="offers">
         <div class="container offers-container">
-<img src="./images/GroupApple.png" alt="aplle" class="offers-img" />
+          <img src="./images/GroupApple.png" alt="aplle" class="offers-img" />
 
           <div class="offers-text">
             <h2 class="offers-title">What’s Special About Our Offerings</h2>
@@ -82,7 +107,11 @@
             </p>
             <ul class="offers-list">
               <li class="offers-item">
-                <img src="./images/Icon Deliv.png" alt="rocket" class="favorites-icon" />
+                <img
+                  src="./images/Icon Deliv.png"
+                  alt="rocket"
+                  class="favorites-icon"
+                />
                 <h3 class="offers-item-name">Fasest Delivery</h3>
                 <p class="offers-item-descr">
                   Our advanced logistics system and dedicated delivery partners
@@ -90,7 +119,11 @@
                 </p>
               </li>
               <li class="offers-item">
-                <img src="./images/Icon Order.png" alt="pointer" class="favorites-icon" />
+                <img
+                  src="./images/Icon Order.png"
+                  alt="pointer"
+                  class="favorites-icon"
+                />
                 <h3 class="offers-item-name">Easy To Order</h3>
                 <p class="offers-item-descr">
                   You can browse through a wide variety of cuisines and
@@ -108,27 +141,69 @@
         <div class="container favorites-container">
           <h2 class="favorites-title">Some of Our Favorites</h2>
           <p class="favorites-descr">Looking for something delicious?</p>
-        
-        <ul class="favorites-list">
-          <li class="favorites-item">
-            <div class="favorites-border"><img src="./images/gamburger.png" alt="Gamburger" width="315" class="favorites-img" /></div>
-          </li>
-          <li class="favorites-item">
-           <div class="favorites-border"> <img src="./images/Pasta.png" alt="Pasta" width="315" class="favorites-img" /></div>
-          </li>
-          <li class="favorites-item">
-            <div class="favorites-border"><img src="./images/pizza.png" alt="Pizza" width="315" class="favorites-img" /></div>
-          </li>
-          <li class="favorites-item">
-            <div class="favorites-border"><img src="./images/chicken.png" alt="Chicken" width="315" class="favorites-img" /></div>
-          </li>
-          <li class="favorites-item">
-            <div class="favorites-border"><img src="./images/salat.png" alt="Salat" width="315" class="favorites-img" /></div>
-          </li>
-          <li class="favorites-item">
-            <div class="favorites-border"><img src="./images/borshch.png" alt="Borshch" width="315" class="favorites-img" /></div>
-          </li>
-        </ul>
+
+          <ul class="favorites-list">
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/gamburger.png"
+                  alt="Gamburger"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/Pasta.png"
+                  alt="Pasta"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/pizza.png"
+                  alt="Pizza"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/chicken.png"
+                  alt="Chicken"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/salat.png"
+                  alt="Salat"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+            <li class="favorites-item">
+              <div class="favorites-border">
+                <img
+                  src="./images/borshch.png"
+                  alt="Borshch"
+                  width="315"
+                  class="favorites-img"
+                />
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="comments container">
